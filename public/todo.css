@@ -1,0 +1,259 @@
+*{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Fredoka One', cursive; */
+    /* background-color: rgb(51, 50, 50); */
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap:nowrap; */
+    /* flex-direction: column; */
+    width: 100%;
+    margin: -15px 0px 30px 0;
+
+}
+.heading h1{
+    font-size: 2rem;
+}
+.input{
+    /* border: 1px solid blue; */
+    width: 350px;
+    text-align: center;
+    
+}
+.input input{
+    width: 80%;
+    outline: none;
+    padding: 10px 15px;
+    background-color: #E9EBEE;;
+    border: none;
+    border-radius:  9px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input input:focus{
+    box-shadow: 0 0 5px rgb(68, 67, 67);
+    border: 1px solid rgb(189, 149, 149);
+}
+
+.submit{
+   background-color: transparent;
+   border: none;
+    /* transition: 1s; */
+  
+}
+i{
+    color: rgb(160, 158, 158);
+}
+.submit i{  
+    cursor: pointer;
+    font-size: 30px;
+    background-color: transparent;
+    outline: none;
+    color: rgb(160, 158, 158);
+
+}
+
+.submit2 i{
+    position:fixed;
+    font-size: 60px ;
+    color: rgb(71, 71, 71) ;
+    bottom: 50px;
+    left: 30px;
+}
+
+
+.list{
+    width: 500px;
+    margin: auto;
+    
+}
+
+.item2{
+    position: static;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 1px;
+}
+.item3{
+    margin-left: 1px;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.item1{
+   
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    color: rgb(56 56 56);
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    word-break:break-word;
+}
+.item1::first-letter {
+    text-transform:capitalize;
+}
+.date{
+    margin-top: -0.3rem;
+}
+.boss{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #E9EBEE;
+    border-radius: 5px;
+    padding: 5px 16px;
+    color: rgb(77, 30, 30);
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+ 
+
+}
+.boss:hover{
+    box-shadow: 0 0 20px rgb(236, 255, 62);
+    border: 1px solid red;
+}
+
+.item i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media (max-width:3000px){
+    .heading{
+        align-items: center;
+        flex-direction: column;
+    }
+    .heading h1{
+        margin: 10px 0;
+    }
+    .input{
+        width: 100%;
+    }
+    .list{
+        width: 80%;
+    }
+}
+
+@media (max-width:768px){
+    .heading{
+        align-items: center;
+        flex-direction: column;
+    }
+    .heading h1{
+        margin: 10px 0;
+    }
+    .input{
+        width: 90%;
+    }
+    .input input{
+        font-size: 20px;
+    }
+    .list{
+        width: 75%;
+    }
+    .submit2 i{
+        font-size: 50px ;
+        left: 17px;
+    }
+    .item1{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width:480px){
+    .input input{
+        width: 74%;
+    }
+    .submit2 i{
+        font-size: 37px ;
+        left: 15px;
+    }
+}
+@media (max-width:320px){
+    .input input{
+        width: 60%;
+    }
+    .submit2 i{
+        font-size: 37px ;
+        left: 8px;
+    }
+}
+
+
+
+
+/* new mode */
+.button {
+    border: none;
+    color: white;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    margin: 4px 0px 0px 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .button4 {
+    background-color: rgb(180, 164, 164);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+  }
+  
+  .button4:hover {
+    background-color: #6d6565;
+    color: white;}
+  
+  .button5 {
+    background-color: #555555;
+    color: rgb(255, 249, 249);
+    border: 2px solid white;
+
+  }
+  
+  .button5:hover {
+    background-color: white;
+    color: #555555;
+  }
+
+button:visited{
+    visibility:hidden ;
+}
+
+.button6{
+    position: absolute;
+    right:10%;
+    padding:1rem;
+    border-radius: 15px !important;
+    background-color: green;
+    border: 2px  solid white;
+}
+.button6:hover{
+    background-color: rgb(31, 167, 31);
+    margin: 1px;
+}

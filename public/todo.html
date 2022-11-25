@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <title>To-Do list</title>
+</head>
+
+<body>
+    <div class="container">
+        <button class="button button4" id="mode" onclick="mode(this)">dark mode</button>
+        <button class="button button6" id="logout" onclick="logout(this)">Logout</button>
+        <div class="heading">
+            <h1 id="h1">To dos</h1>
+
+            <div class="input">
+                <input type="text" id="input" placeholder="eg do homework...">
+                <button onclick="submitt()" class="submit"><i id="plus" class="fa-solid fa-circle-plus"></i></button>
+            </div>   
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="list" id="to-do-item">
+        </div>
+    </div>
+
+    <button onclick="submit2()" class="submit submit2"><i id="plus1" class="fa-solid fa-circle-plus"></i></button>
+    <script type='module' src="todo.js"></script>
+</body>
+
+</html>

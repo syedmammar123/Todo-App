@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo Login</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="top-head">
+            <h1 class="h1">Login</h1>
+        </div>
+        <form >
+            <div class="first">
+                <div><img class="name" src="/images/email.png" alt=""></div>
+                <div><input  id="email" class="input"  placeholder="Email Address" type="email">
+                </div>
+            </div>
+            <div class="first">
+                <div><img class="password" src="/images/password.png" alt=""></div>
+                <div><input  id="password" class="input" placeholder="Password" type="password"></div>
+            </div>
+
+            <div class="dontAcc">Don't have an account?<a href="/signup.html">Create Account</a></div>
+            <div class="first submit-btn">
+                <div><input class="btn"  type="submit"  value="Login" onclick="login(event)"></div>
+            </div>
+        </form>
+
+    </div>
+
+
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
